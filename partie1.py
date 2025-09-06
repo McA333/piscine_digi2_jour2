@@ -37,7 +37,14 @@ def read_all_lines(filename) :
     
     filename.close()
 
+def write_text_better(filename, text) :
+
+    with open(filename, 'w') as filename:
+        filename.write(text)
+        filename.close()
+
 #read_on_line(input("Entrer le nom du fichier à ouvrir :"))
 #write_text(input("Entrer un nom de fichier à creer : "), input("Entrer le texte : "))
 #copy_characters(input("Entrer le fichier source : "), input("Entrer le fichier destination : "), input("Entrer le nombre de caractère à copier :"))
-read_all_lines(input("Entrer le nom du fichier : "))
+#read_all_lines(input("Entrer le nom du fichier : "))
+#write_text_better(input("Entrer le nom du fichier : "),input("Entrer le text : "))
